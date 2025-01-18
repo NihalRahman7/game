@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh3w561w4vvkg"]
+
+[ext_resource type="Texture2D" uid="uid://cp46031nel4pc" path="res://marlon/Pixel Art Flower Pack/Pixel Art Flower Pack/Garden Grid with Flowers/Grid 1.png" id="1_a4iti"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_usl8d"]
+size = Vector2(128, 16)
+
+[node name="TestingFloor" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_usl8d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1.90735e-06)
+scale = Vector2(2.2069, 0.153846)
+texture = ExtResource("1_a4iti")

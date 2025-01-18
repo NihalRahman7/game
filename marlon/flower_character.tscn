@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg4os80ftpwab"]
+
+[ext_resource type="Script" path="res://marlon/NewScriptflower_character.gd" id="1_44nqc"]
+[ext_resource type="Texture2D" uid="uid://8te0p0xx0w12" path="res://marlon/Pixel Art Flower Pack/Pixel Art Flower Pack/Flower 1/Flower 1 - BLUE.png" id="1_ufua7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opvm5"]
+size = Vector2(8, 16)
+
+[node name="Flower Character" type="CharacterBody2D"]
+collision_mask = 0
+script = ExtResource("1_44nqc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_opvm5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+scale = Vector2(0.190476, 0.5)
+texture = ExtResource("1_ufua7")

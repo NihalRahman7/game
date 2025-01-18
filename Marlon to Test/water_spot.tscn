@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqosfoa1r0vu7"]
+
+[ext_resource type="Script" path="res://marlon/water_spot.gd" id="1_jcovb"]
+[ext_resource type="Texture2D" uid="uid://crpbqd68twkmw" path="res://marlon/Pixel Art Flower Pack/Pixel Art Flower Pack/Bush 2/Bush 2 - ORANGE.png" id="1_ygoj0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdc2t"]
+size = Vector2(8, 8)
+
+[node name="Water Spot" type="Node2D"]
+script = ExtResource("1_jcovb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.117647, 0.296296)
+texture = ExtResource("1_ygoj0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fdc2t")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4ks4iqwqg6eh"]
+
+[ext_resource type="Texture2D" uid="uid://uh10a6hmqfg4" path="res://icon.svg" id="1_taese"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdxjs"]
+size = Vector2(128, 128)
+
+[node name="Test floor" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tdxjs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_taese")

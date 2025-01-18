@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://hh1laini8dys"]
+
+[ext_resource type="Script" path="res://marlon/primary_enemy.gd" id="1_l6wts"]
+[ext_resource type="Texture2D" uid="uid://dndbggtojogla" path="res://marlon/Pixel Art Flower Pack/Pixel Art Flower Pack/Flower 3/Flower 3 - TEAL.png" id="2_p3qi0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77sar"]
+size = Vector2(8, 8)
+
+[node name="Primary Enemy Unfinished" type="CharacterBody2D"]
+script = ExtResource("1_l6wts")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.156863, 0.470588)
+texture = ExtResource("2_p3qi0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_77sar")
