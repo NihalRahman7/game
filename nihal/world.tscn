@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=4 uid="uid://dsu1qpnuub6ec"]
 
 [ext_resource type="Texture2D" uid="uid://sgo42cdu2xyw" path="res://nihal/scenes/Terrain (16x16).png" id="2_j86b1"]
-[ext_resource type="PackedScene" uid="uid://bjtu53fbw6n42" path="res://nihal/node_2d.tscn" id="3_d2hne"]
+[ext_resource type="PackedScene" uid="uid://bjtu53fbw6n42" path="res://nihal/levels/node_2d.tscn" id="3_d2hne"]
 [ext_resource type="Texture2D" uid="uid://djsw5woffxfoj" path="res://nihal/scenes/DemoObjects16x16.png" id="3_lusya"]
 [ext_resource type="Texture2D" uid="uid://cgu33k0y251l3" path="res://nihal/scenes/wall2.png" id="3_vj7dh"]
 [ext_resource type="Texture2D" uid="uid://b3gujhbqesbco" path="res://nihal/scenes/16-bit-spike-Sheet.png" id="4_7px4p"]
