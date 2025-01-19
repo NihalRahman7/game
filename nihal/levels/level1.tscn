@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=4 uid="uid://dl1iu1rodrmqw"]
+[gd_scene load_steps=16 format=4 uid="uid://dl1iu1rodrmqw"]
 
 [ext_resource type="Texture2D" uid="uid://sgo42cdu2xyw" path="res://nihal/scenes/Terrain (16x16).png" id="1_aj7by"]
 [ext_resource type="Texture2D" uid="uid://djsw5woffxfoj" path="res://nihal/scenes/DemoObjects16x16.png" id="2_akbo6"]
 [ext_resource type="Texture2D" uid="uid://cgu33k0y251l3" path="res://nihal/scenes/wall2.png" id="3_j130e"]
 [ext_resource type="Texture2D" uid="uid://b3gujhbqesbco" path="res://nihal/scenes/16-bit-spike-Sheet.png" id="4_gwcpd"]
 [ext_resource type="PackedScene" uid="uid://bjtu53fbw6n42" path="res://nihal/levels/enemy.tscn" id="5_471m0"]
+[ext_resource type="Texture2D" uid="uid://bxc3hcpfp2kxx" path="res://nihal/scenes/Background1.jpg" id="6_ibmrv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u24mv"]
 texture = ExtResource("1_aj7by")
@@ -1827,3 +1828,9 @@ tile_set = SubResource("TileSet_qyo7u")
 
 [node name="EnemyBug" parent="." instance=ExtResource("5_471m0")]
 position = Vector2(57, 231)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(466, -322)
+scale = Vector2(2.57278, 2.07583)
+texture = ExtResource("6_ibmrv")

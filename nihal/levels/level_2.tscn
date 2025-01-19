@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=4 uid="uid://4sxfe5cyttmo"]
+[gd_scene load_steps=14 format=4 uid="uid://4sxfe5cyttmo"]
 
 [ext_resource type="Texture2D" uid="uid://sgo42cdu2xyw" path="res://nihal/scenes/Terrain (16x16).png" id="1_p26lv"]
 [ext_resource type="Texture2D" uid="uid://b3gujhbqesbco" path="res://nihal/scenes/16-bit-spike-Sheet.png" id="2_0nhhc"]
 [ext_resource type="PackedScene" uid="uid://bjtu53fbw6n42" path="res://nihal/levels/enemy.tscn" id="2_ky5cm"]
 [ext_resource type="Texture2D" uid="uid://djsw5woffxfoj" path="res://nihal/scenes/DemoObjects16x16.png" id="4_hstpm"]
+[ext_resource type="Texture2D" uid="uid://bxc3hcpfp2kxx" path="res://nihal/scenes/Background1.jpg" id="5_5yheh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kr5a3"]
 texture = ExtResource("1_p26lv")
@@ -426,3 +427,9 @@ tile_set = SubResource("TileSet_ab2r8")
 [node name="Moss" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAA5AA0AAAAFAA0AAAA6AA0AAAAFAA0AAAA7AA0AAAAFAA0AAAA8AA0AAAAFAA0AAAA9AA0AAAAFAA0AAAA+AA0AAAAFAA0AAAA/AA0AAAAFAA0AAABPAA0AAAAFAA0AAABQAA0AAAAFAA0AAABMAA0AAAAFAA0AAABLAA0AAAAFAA0AAABKAA0AAAAFAA0AAAATAA0AAAAFAA0AAAASAA0AAAAFAA0AAAARAA0AAAAFAA0AAAAQAA0AAAAFAA0AAAAPAA0AAAAFAA0AAAAOAA0AAAAFAA0AAAANAA0AAAAEAA0AAAAMAA0AAAAEAA0AAAALAA0AAAAEAA0AAAAKAA0AAAAEAA0AAAAJAA0AAAAEAA0AAAAIAA0AAAADAA0AAAD0/w0AAAADAA0AAAD1/w0AAAADAA0AAAD2/w0AAAADAA0AAAD3/w0AAAADAA0AAADg/w0AAAADAA0AAADh/w0AAAADAA0AAADi/w0AAAADAA0AAADj/w0AAAADAA0AAADk/w0AAAADAA0AAADl/w0AAAADAA0AAADm/w0AAAADAA0AAADq/w0AAAADAA0AAADr/w0AAAADAA0AAADs/w0AAAAFAA0AAADt/w0AAAAFAA0AAABAAA0AAAADAA0AAABJAA0AAAADAA0AAABIAA0AAAADAA0AAABHAA0AAAADAA0AAABRAA0AAAADAA0AAABmAA0AAAADAA0AAABnAA0AAAADAA0AAABoAA0AAAADAA0AAAA=")
 tile_set = SubResource("TileSet_tr0ih")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(459, -639)
+scale = Vector2(2.35444, 1.91917)
+texture = ExtResource("5_5yheh")
