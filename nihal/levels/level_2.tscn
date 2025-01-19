@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=4 uid="uid://4sxfe5cyttmo"]
 
 [ext_resource type="Texture2D" uid="uid://sgo42cdu2xyw" path="res://nihal/scenes/Terrain (16x16).png" id="1_p26lv"]
-[ext_resource type="PackedScene" uid="uid://bjtu53fbw6n42" path="res://nihal/levels/node_2d.tscn" id="2_ky5cm"]
+[ext_resource type="PackedScene" uid="uid://bjtu53fbw6n42" path="res://nihal/levels/enemy.tscn" id="2_ky5cm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kr5a3"]
 texture = ExtResource("1_p26lv")
