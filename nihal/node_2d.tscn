@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjtu53fbw6n42"]
+
+[ext_resource type="Script" path="res://nihal/scripts/character_body_2d.gd" id="1_e4ifd"]
+[ext_resource type="Texture2D" uid="uid://c71eirsgk3nvd" path="res://nihal/scenes/pixelbug.png" id="2_q5dp5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cxiwj"]
+radius = 36.0
+height = 84.0
+
+[node name="EnemyBug" type="Node2D"]
+
+[node name="Enemy" type="CharacterBody2D" parent="."]
+script = ExtResource("1_e4ifd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+position = Vector2(4, 3)
+scale = Vector2(0.108259, 0.107143)
+texture = ExtResource("2_q5dp5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+shape = SubResource("CapsuleShape2D_cxiwj")
+
+[node name="Camera2D" type="Camera2D" parent="Enemy"]
